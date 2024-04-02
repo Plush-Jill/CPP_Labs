@@ -1,6 +1,6 @@
 
 
-#include "../Headers/GameField.h"
+#include "../GameField/GameField.h"
 #include <map>
 #include <iostream>
 

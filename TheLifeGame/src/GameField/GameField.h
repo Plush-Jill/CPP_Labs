@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Cell/"
+#include "../Cell/Cell.h"
 #include <vector>
 #include <fstream>
 #include <map>

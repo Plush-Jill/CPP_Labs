@@ -1,5 +1,6 @@
 #include "TheLifeGameCreator.h"
 #include "../Exceptions/TheLifeGameExceptions.h"
+#include "../Controller/Controller.h"
 #include <memory>
 #include <string>
 #include <iostream>
@@ -77,6 +78,12 @@ bool TheLifeGameCreator::readNameOrRules(std::fstream& saveFile){
     return true;
 }
 std::shared_ptr<Controller> TheLifeGameCreator::createGame(){
+    /*return std::shared_ptr<Controller>(this->universeName,
+                                       this->neighboursToBirth,
+                                       this->neighboursToSurvive,
+                                       this->aliveCells,
+                                       this->fieldSize,
+                                       this->currentTick);*/
     return std::make_shared<Controller>(this->universeName,
                                         this->neighboursToBirth,
                                         this->neighboursToSurvive,
